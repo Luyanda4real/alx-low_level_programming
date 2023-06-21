@@ -1,8 +1,3 @@
-/*
- * File: 101-natural.c
- * Auth: Luyanda Sithole
- */
-
 #include <stdio.h>
 
 /**
@@ -15,12 +10,12 @@
 
 int main(void)
 {
-	int x, sum = 0;
+	int i, sum = 0;
 
-	for (x = 0; x < 1024; x++)
+	for (i = 0; i < 1024; i++)
 	{
-		((x % 3) == 0 || (x % 5) == 0);
-			sum += x;
+		((i % 3) == 0 || (i % 5) == 0);
+			sum += i;
 	}
 
 	printf("%d\n", sum);
