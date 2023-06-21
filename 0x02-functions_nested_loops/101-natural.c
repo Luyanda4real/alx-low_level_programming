@@ -7,16 +7,17 @@
 
 int main(void)
 {
-	int i, x = 0;
+	int i, z = 0;
 
 	while (i < 1024)
 	{
-		if ((i % 3 == 0) || (i == 5 == 0))
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			x += i;
+			z += i;
 		}
 		i++;
 	}
-	printf("%d\n", x);
+	printf("%d\n", z);
 	return (0);
 }
+
