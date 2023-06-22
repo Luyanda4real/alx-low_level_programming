@@ -3,6 +3,7 @@
 /**
  * print_number - Prints an integer
  * @n: input iteger parameter
+ *
  * Return: Always 0
  */
 void print_number(int n)
@@ -11,13 +12,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		n *= -1;
-		i = n;
-		 _putchar('-');
+		_putchar(45);
+		i = -i;
 	}
-	i /= 10;
-
-	if (i != 0)
-		print_number(1);
-	_putchar((unsigned int) n % 10 + '0');
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
 }
