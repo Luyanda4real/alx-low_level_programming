@@ -1,10 +1,9 @@
 #include "main.h"
 /**
  * main - Determine if number is positive, negative or zero
- * 0: is the number to be checked
+(* 0 : is the number to be checked
  * Return: 0 on sucess
  */
-
 void positive_or_negative(int i)
 {
 	if (i < 0)
